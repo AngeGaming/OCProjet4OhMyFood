@@ -22,6 +22,38 @@
   font-family: "Roboto";
 }
 
+.reservation {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f6f6f6;
+}
+.reservation .reservation-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 50px 10px 50px;
+}
+.reservation .reservation-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.reservation .reservation-btn {
+  width: 218px;
+  height: 50px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
 * {
   padding: 0;
   margin: 0;
