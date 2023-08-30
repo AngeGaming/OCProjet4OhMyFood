@@ -75,6 +75,62 @@
   color: grey;
 }
 
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  background: #f6f6f6;
+  padding: 60px 0 70px 0px;
+  gap: 18px;
+}
+.restaurant .restaurant_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px 20px;
+}
+.restaurant .card_restaurant {
+  border-radius: 15px;
+  background: white;
+  margin: 0 18px 0 17px;
+}
+.restaurant .card_restaurant .card_restaurant-img {
+  display: flex;
+  height: 231px;
+  width: 100%;
+}
+.restaurant .card_restaurant .card_restaurant-text {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 10px 12px 14px;
+  gap: 2px;
+}
+.restaurant .card_restaurant .card_restaurant-text .card_restaurant-text-icon {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  background-color: #353535;
+  color: white;
+  font-family: "Roboto";
+}
+.footer-container .footer-logo {
+  margin-bottom: 16px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-container .footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-container .footer-text .footer-text-icon {
+  margin-right: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
