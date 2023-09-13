@@ -238,7 +238,13 @@
   font-weight: 800;
 }
 .restaurant-page-container .dish .food .food-name_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 15px;
+}
+.restaurant-page-container .dish .food .price {
+  font-weight: 700;
 }
 .restaurant-page-container .order-btn {
   display: flex;
