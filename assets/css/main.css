@@ -22,6 +22,13 @@
 .header_container .location-text {
   font-family: "Roboto";
 }
+.header_container .back-arrow {
+  position: absolute;
+  padding-left: 22px;
+}
+.header_container .back-arrow i {
+  color: #353535;
+}
 
 .reservation {
   font-family: "Roboto";
@@ -72,8 +79,27 @@
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+.operation .operation-rectangle .operation-rectangle-round {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: -40px;
+}
+.operation .operation-rectangle .operation-rectangle-round p {
+  display: flex;
+  color: white;
+  font-size: 15px;
+}
 .operation .operation-rectangle .operation-rectangle_icon {
   color: grey;
+}
+.operation .operation-rectangle .operation-rectangle_icon_purple {
+  color: #9356DC;
 }
 
 .restaurant {
@@ -98,6 +124,21 @@
   text-decoration: none;
   color: black;
 }
+.restaurant .card_restaurant .restaurant-new {
+  display: flex;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 14px;
+  color: #008766;
+  font-size: 14px;
+}
 .restaurant .card_restaurant .card_restaurant-img {
   display: flex;
   height: 231px;
@@ -105,6 +146,8 @@
 }
 .restaurant .card_restaurant .card_restaurant-img img {
   width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .restaurant .card_restaurant .card_restaurant-text {
   display: flex;
@@ -141,6 +184,79 @@
 }
 .footer-container .footer-text .footer-text-icon {
   margin-right: 10px;
+}
+
+.restaurant-img img {
+  height: 275px;
+}
+
+.restaurant-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 15px;
+  margin-top: -60px;
+  position: relative;
+  background-color: white;
+  border-radius: 50px 50px 0 0;
+}
+.restaurant-page-container .restaurant-title {
+  font-family: "Shrikhand";
+}
+.restaurant-page-container .restaurant-title h1 {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.restaurant-page-container .dish {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Roboto";
+}
+.restaurant-page-container .dish h2 {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+}
+.restaurant-page-container .dish .line {
+  width: 40px;
+  background-color: #99E2D0;
+  height: 3px;
+  margin-top: -5px;
+}
+.restaurant-page-container .dish .food {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+}
+.restaurant-page-container .dish .food .food-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+.restaurant-page-container .dish .food .food-name_info {
+  font-size: 15px;
+}
+.restaurant-page-container .order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  border-radius: 25px;
+  width: 186px;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.restaurant-page-container .order-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 * {
