@@ -185,6 +185,10 @@
 .footer-container .footer-text .footer-text-icon {
   margin-right: 10px;
 }
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
 
 .restaurant-img img {
   height: 275px;
