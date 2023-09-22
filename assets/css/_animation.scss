@@ -1,8 +1,16 @@
+// Animation de tous les boutons
 .btn-animation:hover {
     background: linear-gradient(to bottom, rgb(255,121,218) 0%, rgb(170,100,255) 100%);
     box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.25);
 }
-.like-animation:active {
-    background: rgb(255,121,218);
+
+// Animation de like
+.like-animation:active  {
     background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+}
+
+// Animation du choix de menu
+
+.choice-animation:active {
+    
 }

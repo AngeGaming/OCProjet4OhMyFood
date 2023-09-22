@@ -13,79 +13,103 @@
     background-color: #F6F6F6;
     border-radius: 50px 50px 0 0;
 }
-    .restaurant-title {
-        display: flex;
-        font-family: $primary-font-family;
-        padding-top: 20px;
-        align-items: center;
-        gap: 24px;
-    }
-    .restaurant-title h1 {
-            font-size: 28px;
-            font-weight: 400;
-        }
-    .dish {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        font-family: $secondary-font-family;
-    }
-    .dish h2 {
-            font-family: $secondary-font-family;
-            font-size: 16px;
-            font-weight: 300;
-        }
-        .line {
-            width: 40px;
-            background-color: $tertiary-color;
-            height: 3px;
-            margin-top: -5px;
-        }
-        .food {
-            display: flex;
-            flex-direction: column;
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-            gap: 5px;
-        }
-            .food-name {
-                font-size: 18px;
-                font-weight: 800;
-            }
-            .food-name_info {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                font-size: 15px;
-            }
-            .price {
-                font-weight: 700;
-            }
-            .choice-animation {
-                display: flex;
-                right: 0;
-                width: 50px;
-                background: $tertiary-color;
-            }
-    .order-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-        border-radius: 25px;
-        width: 186px;
-        height: 50px;
-        font-family: $secondary-font-family;
-        font-size: 16px;
-        font-weight: 500;
-        margin: auto;
-        margin-bottom: 24px;
-    }
-    .order-btn a  {      
-            text-decoration: none;
-            color: white;
-        }
+.restaurant-title {
+    display: flex;
+    font-family: $primary-font-family;
+    padding-top: 20px;
+    align-items: center;
+    gap: 24px;
+}
+.restaurant-title h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: $secondary-font-family;
+}
+
+.dish h2 {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.line {
+    width: 40px;
+    background-color: $tertiary-color;
+    height: 3px;
+    margin-top: -5px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+    gap: 5px;
+    position: relative;
+}
+
+.food-name {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.food-name_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border-radius: 25px;
+    width: 186px;
+    height: 50px;
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.order-btn a  {      
+    text-decoration: none;
+    color: white;
+}
+
+.choice-animation {
+    display: none;
+    position: absolute;
+    justify-content: flex-end;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    color: white;
+    background-color: $tertiary-color;
+    bottom: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.choice-animation i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
 @media screen and (min-width: 768px) {
     .restaurant-page-container {
@@ -100,5 +124,10 @@
     .restaurant-page-container {
         max-width: 1055px;
         margin: -40px auto 0 auto;
+    }
+
+    .dish {
+        padding-right: 180px;
+        padding-left: 180px;
     }
 }

@@ -14,6 +14,7 @@
     <title>OhMyFood Paris</title>
 </head>
 <body>
+<!-- Header  -->
     <header>
         <div class="header_container">
             <div class="logo">
@@ -26,11 +27,22 @@
         </div>
     </header>
     <main>
+<!-- Loader -->
+        <div class="loader" id="hideMe">
+            <div class="dot-container">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+            </div>
+            <p class="loading">Chargement...</p>
+        </div>
+<!-- Block de reservation de menu -->
         <div class="reservation">
             <h1 class="reservation-title">Réservez le menu qui vous convient</h1>
             <p class="reservation-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="reservation-btn">Explorer nos restaurants</button>
+            <a href="#" class="btn-animation reservation-btn">Explorer nos restaurants</a>
         </div>
+<!-- Block "Fonctionnement" -->
         <div class="operation">
             <h2 class="operation-title">Fonctionnement</h2>
             <div class="operation-reactangle-container">
@@ -57,6 +69,7 @@
                 </div>
             </div>
         </div>
+<!-- Affichage des restaurants  -->
         <div class="restaurant">
             <h2 class="restaurant_title">Restaurants</h2>
             <div class="card_restaurant-container">
@@ -71,7 +84,7 @@
                         <div class="card_restaurant-text">
                             <h3 class="card_restaurant-name">La palette du goût</h3>
                             <p class="card_restaurant-location">Ménilmontant</p>
-                            <i class="card_restaurant-text-icon fa-regular fa-heart fa-lg"></i>
+                            <i class="card_restaurant-text-icon like-animation fa-regular fa-heart fa-lg"></i>
                         </div>
                     </a>
                 </div>
@@ -86,7 +99,7 @@
                         <div class="card_restaurant-text">
                             <h3 class="card_restaurant-name">La note enchantée</h3>
                             <p class="card_restaurant-location">Charonne</p>
-                            <i class="card_restaurant-text-icon fa-regular fa-heart fa-lg"></i>
+                            <i class="card_restaurant-text-icon like-animation fa-regular fa-heart fa-lg"></i>
                         </div>
                     </a>
                 </div>
@@ -98,7 +111,7 @@
                         <div class="card_restaurant-text">
                             <h3 class="card_restaurant-name">À la française</h3>
                             <p class="card_restaurant-location">Cité Rouge</p>
-                            <i class="card_restaurant-text-icon fa-regular fa-heart fa-lg"></i>
+                            <i class="card_restaurant-text-icon like-animation fa-regular fa-heart fa-lg"></i>
                         </div>
                     </a>
                 </div>
@@ -110,14 +123,14 @@
                         <div class="card_restaurant-text">
                             <h3 class="card_restaurant-name">Le délice des sens</h3>
                             <p class="card_restaurant-location">Folie-Méricourt</p>
-                            <i class="card_restaurant-text-icon fa-regular fa-heart fa-lg"></i>
+                            <i class="card_restaurant-text-icon like-animation fa-regular fa-heart fa-lg"></i>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </main>
-    
+<!-- Footer  -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
