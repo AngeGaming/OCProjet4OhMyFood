@@ -25,6 +25,10 @@
     font-weight: 400;
 }
 
+.restaurant_menu-like{
+    display: flex;
+}
+
 .dish {
     display: flex;
     flex-direction: column;
@@ -68,6 +72,7 @@
 }
 
 .price {
+    display: flex;
     font-weight: 700;
 }
 
@@ -89,26 +94,6 @@
 .order-btn a  {      
     text-decoration: none;
     color: white;
-}
-
-.choice-animation {
-    display: none;
-    position: absolute;
-    justify-content: flex-end;
-    right: 0;
-    height: 100%;
-    width: 50px;
-    color: white;
-    background-color: $tertiary-color;
-    bottom: 0;
-    border-radius: 0 20px 20px 0;
-}
-
-.choice-animation i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 
 @media screen and (min-width: 768px) {

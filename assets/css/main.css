@@ -219,11 +219,11 @@
   position: relative;
 }
 
-.card_restaurant-text-icon {
+.like-home-page {
   display: flex;
   position: absolute;
-  right: 24px;
-  top: 16px;
+  right: 16px;
+  top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -330,6 +330,10 @@
   font-weight: 400;
 }
 
+.restaurant_menu-like {
+  display: flex;
+}
+
 .dish {
   display: flex;
   flex-direction: column;
@@ -373,6 +377,7 @@
 }
 
 .price {
+  display: flex;
   font-weight: 700;
 }
 
@@ -396,26 +401,6 @@
   color: white;
 }
 
-.choice-animation {
-  display: none;
-  position: absolute;
-  justify-content: flex-end;
-  right: 0;
-  height: 100%;
-  width: 50px;
-  color: white;
-  background-color: #99E2D0;
-  bottom: 0;
-  border-radius: 0 20px 20px 0;
-}
-
-.choice-animation i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
 @media screen and (min-width: 768px) {
   .restaurant-page-container {
     margin: -40px 50px 0 50px;
@@ -435,6 +420,7 @@
   }
 }
 .loader {
+  position: fixed;
   display: flex;
   flex-direction: column;
   top: 0;
@@ -444,6 +430,9 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: gray;
+  opacity: 0.8;
+  z-index: 1;
 }
 
 .dot-container {
@@ -479,7 +468,7 @@
     transform: scale(1.2);
   }
 }
-#hideMe {
+#hide {
   /* Firefox */
   /* Safari and Chrome */
   /* Opera */
@@ -499,10 +488,148 @@
   box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.like-animation:active {
-  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+.empty {
+  position: absolute;
 }
 
+.full {
+  position: relative;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.full:before {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(200.64deg, #9356DC 0%, #FF79DA 100%);
+}
+
+.full:hover {
+  opacity: 1;
+}
+
+.choice-animation {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  color: white;
+  background-color: #99E2D0;
+  bottom: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.food:active .price {
+  animation: priceAnimation 0.2s linear forwards;
+}
+.food:active .choice-animation {
+  opacity: 1;
+  animation: choiceAnimation 0.2s linear;
+}
+
+@keyframes priceAnimation {
+  0% {
+    padding-right: 0;
+  }
+  50% {
+    padding-right: 35px;
+  }
+  100% {
+    padding-right: 60px;
+  }
+}
+@keyframes choiceAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+.choice-animation i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.dish-1 {
+  opacity: 0;
+  animation: dishAnimation 1s linear forwards;
+}
+
+.dish-2 {
+  opacity: 0;
+  animation: dishAnimation 1s 1s linear forwards;
+}
+
+.dish-3 {
+  opacity: 0;
+  animation: dishAnimation 1s 2s linear forwards;
+}
+
+@keyframes dishAnimation {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: calc(100% - 15px);
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  @keyframes dishAnimation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: calc(100% - 30px);
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  @keyframes dishAnimation {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: calc(100% - 360px);
+    }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
 * {
   padding: 0;
   margin: 0;
