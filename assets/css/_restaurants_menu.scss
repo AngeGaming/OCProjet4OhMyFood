@@ -62,6 +62,9 @@
 .food-name {
     font-size: 18px;
     font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .food-name_info {
@@ -69,6 +72,12 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 15px;
+}
+
+.food-name_info p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .price {

@@ -367,6 +367,9 @@
 .food-name {
   font-size: 18px;
   font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .food-name_info {
@@ -374,6 +377,12 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 15px;
+}
+
+.food-name_info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .price {
@@ -523,10 +532,10 @@
   border-radius: 0 15px 15px 0;
 }
 
-.food:active .price {
+.food:hover .price {
   animation: priceAnimation 0.2s linear forwards;
 }
-.food:active .choice-animation {
+.food:hover .choice-animation {
   opacity: 1;
   animation: choiceAnimation 0.2s linear;
 }
