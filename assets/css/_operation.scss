@@ -12,14 +12,23 @@
     }
         .operation-rectangle {
             display: flex;
-            align-items: center;
-            gap: 24px;
             background: #f6f6f6;
             padding: 30px;
             margin: 0 10px 0 10px;
             border-radius: 20px ;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+            color: black;
         }
+
+        .operation-rectangle a {
+            display: flex;
+            text-decoration: none;
+            color: black;
+            align-items: center;
+            gap: 24px;
+        }
+
             .operation-rectangle-round {
                 display: flex;
                 width: 24px;

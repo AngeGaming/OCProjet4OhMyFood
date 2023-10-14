@@ -96,13 +96,21 @@
 
 .operation-rectangle {
   display: flex;
-  align-items: center;
-  gap: 24px;
   background: #f6f6f6;
   padding: 30px;
   margin: 0 10px 0 10px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
+}
+
+.operation-rectangle a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  gap: 24px;
 }
 
 .operation-rectangle-round {
@@ -495,6 +503,13 @@
 .btn-animation:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.operation-rectangle:hover {
+  background: #F5EEFF;
+}
+.operation-rectangle:hover .operation-rectangle_icon {
+  color: #9356DC;
 }
 
 .empty {
