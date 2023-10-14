@@ -1,72 +1,68 @@
 .operation {
-    display: flex;
-    flex-direction: column;
-    font-family: $secondary-font-family;
-    padding: 48px 20px 60px 20px;
-    gap: 30px;
+	display: flex;
+	flex-direction: column;
+	font-family: $secondary-font-family;
+	padding: 48px 20px 60px 20px;
+	gap: 30px;
 }
-    .operation-reactangle-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-        .operation-rectangle {
-            display: flex;
-            background: #f6f6f6;
-            padding: 30px;
-            margin: 0 10px 0 10px;
-            border-radius: 20px ;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            text-decoration: none;
-            color: black;
-        }
-
-        .operation-rectangle a {
-            display: flex;
-            text-decoration: none;
-            color: black;
-            align-items: center;
-            gap: 24px;
-        }
-
-            .operation-rectangle-round {
-                display: flex;
-                width: 24px;
-                height: 24px;
-                border-radius: 50%;
-                background-color: $primary-color;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                margin-left: -40px;
-            }
-            .operation-rectangle-round p {
-                    display: flex;
-                    color: white;
-                    font-size: 15px;
-                }
-            .operation-rectangle_icon {
-                color: grey;
-            }
-            .operation-rectangle_icon_purple {
-                color: $primary-color;
-            }
-
+.operation-reactangle-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.operation-rectangle {
+	display: flex;
+	background: #f6f6f6;
+	padding: 30px;
+	margin: 0 10px 0 10px;
+	border-radius: 20px;
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+	text-decoration: none;
+	color: black;
+	a {
+		display: flex;
+		text-decoration: none;
+		color: black;
+		align-items: center;
+		gap: 24px;
+	}
+}
+.operation-rectangle-round {
+	display: flex;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: $primary-color;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	margin-left: -40px;
+	p {
+		display: flex;
+		color: white;
+		font-size: 15px;
+	}
+}
+.operation-rectangle_icon {
+	color: grey;
+}
+.operation-rectangle_icon_purple {
+	color: $primary-color;
+}
 @media screen and (min-width: 768px) {
-        .operation-title {
-            font-size: 34px;
-        }
-        .operation-reactangle-container {
-            display: flex;
-            flex-direction: row;
-        }
-            .operation-rectangle {
-                width: calc( 30% - 10px );
-            }
+	.operation-title {
+		font-size: 34px;
+	}
+	.operation-reactangle-container {
+		display: flex;
+		flex-direction: row;
+	}
+	.operation-rectangle {
+		width: calc( 30% - 10px );
+	}
 }
-
 @media screen and (min-width: 1024px) {
-    .operation {
-        padding: 50px 200px;
-    }
+	.operation {
+		padding: 50px 200px;
+	}
 }

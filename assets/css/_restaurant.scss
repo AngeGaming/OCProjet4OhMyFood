@@ -1,100 +1,97 @@
 .restaurant {
-    display: flex;
-    flex-direction: column;
-    font-family: $secondary-font-family;
-    background: #f6f6f6;
-    padding: 60px 0 70px 0px;
-    gap: 18px;
+	display: flex;
+	flex-direction: column;
+	font-family: $secondary-font-family;
+	background: #f6f6f6;
+	padding: 60px 0 70px 0px;
+	gap: 18px;
 }
-    .restaurant_title {
-        font-size: 24px;
-        font-weight: 700;
-        margin: 0 0 20px 20px;
-    }
-    .card_restaurant-container {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-        .card_restaurant {
-            border-radius: 15px;
-            background: white;
-            margin: 0 18px 0 17px;
-            position: relative;
-        }
-        .card_restaurant a {
-                text-decoration: none;
-                color: black;
-            }
-            .restaurant-new {
-                display: flex;
-                width: 80px;
-                height: 29px;
-                border-radius: 2px;
-                background-color: $tertiary-color;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                right: 0;
-                margin-right: 10px;
-                margin-top: 14px;
-                color: #008766;
-                font-size: 14px;
-            }
-            .card_restaurant-img {
-                display: flex;
-                height: 231px;
-                width: 100%;
-            }
-            .card_restaurant-img img {
-                    width: 100%;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                    object-fit: cover;
-                }
-            .card_restaurant-text {
-                display: flex;
-                flex-direction: column;
-                margin: 16px 10px 12px 14px;
-                gap: 2px;
-                position: relative;
-            }
-
-            .like-home-page {
-                display: flex;
-                position: absolute;
-                right: 16px;
-                top: 20px;
-            }
-
+.restaurant_title {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 20px 20px;
+}
+.card_restaurant-container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.card_restaurant {
+	border-radius: 15px;
+	background: white;
+	margin: 0 18px 0 17px;
+	position: relative;
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
+.restaurant-new {
+	display: flex;
+	width: 80px;
+	height: 29px;
+	border-radius: 2px;
+	background-color: $tertiary-color;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 14px;
+	color: #008766;
+	font-size: 14px;
+}
+.card_restaurant-img {
+	display: flex;
+	height: 231px;
+	width: 100%;
+	img {
+		width: 100%;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		object-fit: cover;
+	}
+}
+.card_restaurant-text {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 10px 12px 14px;
+	gap: 2px;
+	position: relative;
+}
+.like-home-page {
+	display: flex;
+	position: absolute;
+	right: 16px;
+	top: 20px;
+}
 @media screen and (min-width: 768px) {
-        .restaurant_title {
-            font-size: 34px;
-        }
-        .card_restaurant-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-            .card_restaurant {
-                width: calc( 50% - 47px );
-            }
-                .restaurant-new {
-                    margin-right: 10px;
-                }
+	.restaurant_title {
+		font-size: 34px;
+	}
+	.card_restaurant-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.card_restaurant {
+		width: calc( 50% - 47px );
+	}
+	.restaurant-new {
+		margin-right: 10px;
+	}
 }
-
 @media screen and (min-width: 1024px) {
-    .restaurant {
-        padding: 30px 180px;
-    }
-        .card_restaurant-container {
-            gap: 50px 100px;
-        }
-            .card_restaurant {
-                width: calc( 50% - 100px );
-            }
-                .restaurant-new {
-                    right: 10px;
-                }
+	.restaurant {
+		padding: 30px 180px;
+	}
+	.card_restaurant-container {
+		gap: 50px 100px;
+	}
+	.card_restaurant {
+		width: calc( 50% - 100px );
+	}
+	.restaurant-new {
+		right: 10px;
+	}
 }
