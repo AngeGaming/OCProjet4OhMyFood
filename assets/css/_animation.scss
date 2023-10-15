@@ -41,37 +41,18 @@
 // Animation du choix de menu
 .choice-animation {
   display: flex;
-  opacity: 0;
-  position: absolute;
-  right: 0;
   height: 100%;
-  width: 60px;
+  width: 0px;
   color: white;
-  background-color: $tertiary-color;
-  bottom: 0;
+  opacity: 0;
+  background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  transition: all 0.5s;
 }
 
-.food:hover {
-  .price {
-    animation: priceAnimation 0.2s linear forwards;
-  }
-  .choice-animation {
-    opacity: 1;
-    animation: choiceAnimation 0.2s linear;
-  }
-}
-
-@keyframes priceAnimation { 
-  0% {padding-right: 0;}
-  50% {padding-right: 35px;}
-  100%{padding-right: 60px;}
-}
-
-@keyframes choiceAnimation { 
-  0% {width: 0;}
-  50% {width: 30px;}
-  100%{width: 60px;}
+.food:hover .choice-animation {
+  opacity: 1;
+  width: 60px;
 }
 
 .choice-animation i {
